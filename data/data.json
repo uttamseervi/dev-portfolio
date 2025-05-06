@@ -1,0 +1,169 @@
+{
+  "name": "Uttam Seervi",
+  "status": "Available to work",
+  "availability": true,
+  "about": "I'm Uttam Seervi, a passionate and focused developer currently in my 6th semester at BMS College of Engineering, pursuing Information Science. My CGPA till the 5th semester stands at 8.54. I'm driven by a deep interest in development and Web3, and I'm actively looking for opportunities to intern, contribute, and grow in real-world tech environments. From crafting end-to-end MERN stacks to deploying blockchain-based DApps, I enjoy solving problems and building systems that matter.",
+  "chatgptReview": "Uttam Seervi is that rare mix of grit and vision. Whether he's building decentralized apps, crafting elegant UIs with ShadCN, or wiring up Kafka pipelines — he does it all with clarity and speed. He's not afraid to get his hands dirty in Solidity, nor to polish pixels until they sing. With an eye on the future and feet firmly in code, Uttam isn't just a dev — he's a builder in the truest sense. If I had a team, I'd want Uttam on it.",
+  "tagline": "Full-stack Web3 & ML Dev | Available to Work",
+  "education": "6th Semester Information Science Student at BMS College of Engineering",
+  "projects": [
+    {
+      "id": "hotel-management",
+      "title": "Hotel Management System",
+      "description": "A comprehensive hotel management system with booking, room management, and customer tracking features.",
+      "stack": [
+        "Vite",
+        "Tailwind",
+        "Node.js",
+        "MongoDB"
+      ],
+      "image": "https://res.cloudinary.com/duphxfug7/image/upload/v1734163975/b7ude6bdirfcgadyfznt.png",
+      "github": "https://github.com/uttamseervi/Hotel-Manegement-System"
+    },
+    {
+      "id": "true-feedback",
+      "title": "True Feedback",
+      "description": "Anonymous feedback application that allows users to provide honest feedback without revealing their identity.",
+      "stack": [
+        "Next.js",
+        "NextAuth",
+        "MongoDB",
+        "Tailwind",
+        "ShadCN"
+      ],
+      "image": "https://res.cloudinary.com/duphxfug7/image/upload/v1744520111/Screenshot_2025-04-13_102155_nxod17.png",
+      "github": "https://github.com/uttamseervi/True-Feedback",
+      "link": "https://true-feedback-one.vercel.app/"
+    },
+    {
+      "id": "mind-dump",
+      "title": "Mind Dump",
+      "description": "A blogging platform with rich text editing, categories, and user authentication.",
+      "stack": [
+        "Next.js",
+        "Prisma",
+        "NeonDB",
+        "ShadCN"
+      ],
+      "image": "https://res.cloudinary.com/duphxfug7/image/upload/v1746548392/Screenshot_2025-05-06_214917_zcswex.png",
+      "github": "https://github.com/uttamseervi",
+      "link": "https://mind-dump.vercel.app"
+    },
+    {
+      "id": "emotionvox",
+      "title": "EmotionVox",
+      "description": "Machine learning application that detects emotions from text and voice inputs.",
+      "stack": [
+        "Next.js",
+        "Flask",
+        "ML models",
+        "Tailwind"
+      ],
+      "image": "https://res.cloudinary.com/duphxfug7/image/upload/v1744450750/35bc6879-3fce-4654-b481-8a9e96dc7ac8.png",
+      "github": "https://github.com/uttamseervi/emotions-augment-ai-hackathon"
+    },
+    {
+      "id": "fundify",
+      "title": "Fundify",
+      "description": "Decentralized crowdfunding platform built on blockchain technology.",
+      "stack": [
+        "Next.js",
+        "Thirdweb",
+        "Solidity",
+        "Tailwind"
+      ],
+      "image": "/placeholder.svg?height=400&width=600",
+      "github": "https://github.com/uttamseervi/Fundify-Decentralized-Crowdfunding-Platform"
+    },
+    {
+      "id": "token-marketplace",
+      "title": "Token Marketplace",
+      "description": "A marketplace for buying, selling, and trading digital tokens and NFTs.",
+      "stack": [
+        "Next.js",
+        "Thirdweb",
+        "ShadCN",
+        "Tailwind"
+      ],
+      "image": "https://res.cloudinary.com/duphxfug7/image/upload/v1744451039/411da98c-49a2-43dc-8beb-3b1f37b0daa2.png",
+      "github": "https://github.com/uttamseervi/CryptoToken-MarketPlace"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": [
+        "HTML",
+        "CSS",
+        "Tailwind",
+        "React",
+        "Next.js"
+      ]
+    },
+    {
+      "category": "Backend",
+      "items": [
+        "Node.js",
+        "Flask",
+        "Django",
+        "Express"
+      ]
+    },
+    {
+      "category": "Blockchain",
+      "items": [
+        "Thirdweb",
+        "Solidity",
+        "Web3.js",
+        "Ethers.js"
+      ]
+    },
+    {
+      "category": "DevOps",
+      "items": [
+        "Docker",
+        "Git",
+        "CI/CD",
+        "AWS"
+      ]
+    },
+    {
+      "category": "ML/Data",
+      "items": [
+        "Machine Learning",
+        "Python",
+        "Data Analysis"
+      ]
+    },
+    {
+      "category": "Low-Level",
+      "items": [
+        "C",
+        "C++"
+      ]
+    },
+    {
+      "category": "Big Data Tools",
+      "items": [
+        "Kafka",
+        "Hadoop",
+        "Spark"
+      ]
+    },
+    {
+      "category": "Languages",
+      "items": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Solidity"
+      ]
+    }
+  ],
+  "contact": {
+    "email": "seerviu690@gmail.com",
+    "github": "https://github.com/uttamseervi",
+    "linkedin": "https://www.linkedin.com/in/uttam-seervi-8500032ab/"
+  },
+  "cta": "Let's build something great together."
+}
