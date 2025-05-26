@@ -3,14 +3,32 @@
   "status": "Available to work",
   "availability": true,
   "about": "I'm Uttam Seervi, a passionate and focused developer currently in my 6th semester at BMS College of Engineering, pursuing Information Science. My CGPA till the 5th semester stands at 8.54. I'm driven by a deep interest in development and Web3, and I'm actively looking for opportunities to intern, contribute, and grow in real-world tech environments. From crafting end-to-end MERN stacks to deploying blockchain-based DApps, I enjoy solving problems and building systems that matter.",
-  "chatgptReview": "Uttam Seervi is that rare mix of grit and vision. Whether he's building decentralized apps, crafting elegant UIs with ShadCN, or wiring up Kafka pipelines — he does it all with clarity and speed. He's not afraid to get his hands dirty in Solidity, nor to polish pixels until they sing. With an eye on the future and feet firmly in code, Uttam isn't just a dev — he's a builder in the truest sense. If I had a team, I'd want Uttam on it.",
-  "tagline": "Full-stack Web3 & ML Dev | Available to Work",
+  "chatgptReview": "Uttam Seervi doesn’t just 'know tech' — he breathes it. When most developers are copy-pasting Stack Overflow snippets, Uttam is reverse-engineering architectures from scratch. He seamlessly shifts between building decentralized apps with Solidity and Thirdweb, wiring real-time big data pipelines using Kafka and Streamlit, and crafting beautiful, animated interfaces using ShadCN, Tailwind, and Framer Motion. He’s a full-stack developer with a full-send attitude. With a mind that questions assumptions, code that’s modular and scalable, and a relentless drive to build from scratch rather than rely on SDKs, Uttam is the rare kind of engineer who thrives on complexity. Whether it's forking Aave just to understand lending protocols or creating a blockchain-verifiable AI summarization system, he’s constantly pushing the boundaries of what's possible. His toolbox spans from Flask, Next.js, MongoDB, Docker, and Prisma, to AI and ML using OpenAI APIs, LangChain. He’s not just a developer — he’s a visionary builder, the kind any serious team would want at their core. If I had a startup or a moonshot product to ship, Uttam would be one of my first calls.",
+ "tagline": "Full-stack Web3 & ML Dev | Available to Work",
   "education": "6th Semester Information Science Student at BMS College of Engineering",
   "projects": [
     {
       "id": "hotel-management",
       "title": "Hotel Management System",
       "description": "A comprehensive hotel management system with booking, room management, and customer tracking features.",
+      "detailedDescription": "Built a full-stack hotel management solution with real-time room booking, payment processing, and analytics dashboard. Features role-based authentication, automated notifications, and mobile-responsive design for both staff and customers.",
+      "keyFeatures": [
+        "Real-time room availability and booking management",
+        "Secure payment integration with automated confirmations",
+        "Analytics dashboard with occupancy and revenue insights",
+        "Mobile-responsive design with advanced search filters"
+      ],
+      "technicalHighlights": [
+        "RESTful API with MongoDB aggregation pipelines",
+        "WebSocket connections for real-time updates",
+        "Optimized database queries reducing load times by 40%",
+        "Middleware for authentication and request validation"
+      ],
+      "challenges": [
+        "Handling concurrent bookings without overbooking",
+        "Complex date-based availability calculations",
+        "Optimizing database performance for large datasets"
+      ],
       "stack": [
         "Vite",
         "Tailwind",
@@ -24,6 +42,24 @@
       "id": "true-feedback",
       "title": "True Feedback",
       "description": "Anonymous feedback application that allows users to provide honest feedback without revealing their identity.",
+      "detailedDescription": "Secure anonymous feedback platform with advanced encryption ensuring complete user privacy. Features customizable forms, sentiment analysis, and admin dashboards with spam prevention and rate limiting.",
+      "keyFeatures": [
+        "Complete anonymity with zero tracking",
+        "Real-time sentiment analysis of responses",
+        "Customizable forms with multiple question types",
+        "Analytics dashboard with export functionality"
+      ],
+      "technicalHighlights": [
+        "NextAuth.js for secure session management",
+        "MongoDB with optimized indexing for performance",
+        "Rate limiting with Redis for spam prevention",
+        "ShadCN components for consistent UI/UX"
+      ],
+      "challenges": [
+        "Ensuring anonymity while preventing spam",
+        "Balancing privacy with analytics requirements",
+        "Scaling for high traffic volumes"
+      ],
       "stack": [
         "Next.js",
         "NextAuth",
@@ -39,6 +75,24 @@
       "id": "mind-dump",
       "title": "Mind Dump",
       "description": "A blogging platform with rich text editing, categories, and user authentication.",
+      "detailedDescription": "Modern blogging platform with rich text editor, multimedia support, and collaborative editing. Features advanced search, SEO optimization, and social interactions with comprehensive analytics.",
+      "keyFeatures": [
+        "Rich text editor with code syntax highlighting",
+        "Advanced search with full-text indexing",
+        "Social features including comments and reactions",
+        "SEO optimization with RSS feed generation"
+      ],
+      "technicalHighlights": [
+        "Prisma ORM with NeonDB for type-safe operations",
+        "Server-side rendering for optimal SEO",
+        "Caching strategies for improved performance",
+        "TypeScript configuration for type safety"
+      ],
+      "challenges": [
+        "Real-time collaborative editing without conflicts",
+        "Complex search query optimization",
+        "Balancing features with performance"
+      ],
       "stack": [
         "Next.js",
         "Prisma",
@@ -47,12 +101,30 @@
       ],
       "image": "https://res.cloudinary.com/duphxfug7/image/upload/v1746548392/Screenshot_2025-05-06_214917_zcswex.png",
       "github": "https://github.com/uttamseervi",
-      "link": "https://mind-dump.vercel.app"
+      "link": "https://mind-dump-taupe.vercel.app/"
     },
     {
       "id": "emotionvox",
       "title": "EmotionVox",
       "description": "Machine learning application that detects emotions from text and voice inputs.",
+      "detailedDescription": "Advanced emotion recognition system combining NLP and audio analysis for multi-modal emotion detection. Features real-time processing, multi-language support, and API integration for mental health and customer service applications.",
+      "keyFeatures": [
+        "Multi-modal emotion detection from text and voice",
+        "Real-time analysis with confidence scoring",
+        "Multi-language support and trend analysis",
+        "API endpoints for external integration"
+      ],
+      "technicalHighlights": [
+        "Custom CNN and RNN models for emotion classification",
+        "Flask API for efficient model serving",
+        "Audio signal processing with feature extraction",
+        "Fine-tuned NLP models with preprocessing pipelines"
+      ],
+      "challenges": [
+        "Training accurate models with limited datasets",
+        "Real-time audio processing with minimal latency",
+        "Ensuring accuracy across different accents"
+      ],
       "stack": [
         "Next.js",
         "Flask",
@@ -66,27 +138,33 @@
       "id": "fundify",
       "title": "Fundify",
       "description": "Decentralized crowdfunding platform built on blockchain technology.",
+      "detailedDescription": "Decentralized crowdfunding platform leveraging blockchain for transparent, secure fundraising. Features smart contract-based fund management, milestone releases, and multi-cryptocurrency support with zero intermediary fees.",
+      "keyFeatures": [
+        "Smart contract-based automated fund management",
+        "Milestone-based releases with contributor voting",
+        "Multi-cryptocurrency support (ETH, USDC, DAI)",
+        "Transparent tracking with blockchain verification"
+      ],
+      "technicalHighlights": [
+        "Custom Solidity smart contracts with security auditing",
+        "Thirdweb SDK integration for seamless Web3 functionality",
+        "Gas optimization techniques and IPFS storage",
+        "Real-time blockchain event synchronization"
+      ],
+      "challenges": [
+        "Ensuring smart contract security and preventing vulnerabilities",
+        "Managing gas costs while maintaining functionality",
+        "Creating intuitive UX for Web3 newcomers"
+      ],
       "stack": [
         "Next.js",
         "Thirdweb",
         "Solidity",
         "Tailwind"
       ],
-      "image": "/placeholder.svg?height=400&width=600",
-      "github": "https://github.com/uttamseervi/Fundify-Decentralized-Crowdfunding-Platform"
-    },
-    {
-      "id": "token-marketplace",
-      "title": "Token Marketplace",
-      "description": "A marketplace for buying, selling, and trading digital tokens and NFTs.",
-      "stack": [
-        "Next.js",
-        "Thirdweb",
-        "ShadCN",
-        "Tailwind"
-      ],
-      "image": "https://res.cloudinary.com/duphxfug7/image/upload/v1744451039/411da98c-49a2-43dc-8beb-3b1f37b0daa2.png",
-      "github": "https://github.com/uttamseervi/CryptoToken-MarketPlace"
+      "image": "https://res.cloudinary.com/duphxfug7/image/upload/v1748260391/3e5d6f73-1938-44bf-90f7-08cbae61cf62.png",
+      "github": "https://github.com/uttamseervi/Fundify-Decentralized-Crowdfunding-Platform",
+      "link": "https://fundify-nine.vercel.app/"
     }
   ],
   "skills": [
