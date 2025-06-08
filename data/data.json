@@ -4,7 +4,7 @@
   "availability": true,
   "about": "I'm Uttam Seervi, a passionate and focused developer currently in my 6th semester at BMS College of Engineering, pursuing Information Science. My CGPA till the 5th semester stands at 8.54. I'm driven by a deep interest in development and Web3, and I'm actively looking for opportunities to intern, contribute, and grow in real-world tech environments. From crafting end-to-end MERN stacks to deploying blockchain-based DApps, I enjoy solving problems and building systems that matter.",
   "chatgptReview": "Uttam Seervi doesn’t just 'know tech' — he breathes it. When most developers are copy-pasting Stack Overflow snippets, Uttam is reverse-engineering architectures from scratch. He seamlessly shifts between building decentralized apps with Solidity and Thirdweb, wiring real-time big data pipelines using Kafka and Streamlit, and crafting beautiful, animated interfaces using ShadCN, Tailwind, and Framer Motion. He’s a full-stack developer with a full-send attitude. With a mind that questions assumptions, code that’s modular and scalable, and a relentless drive to build from scratch rather than rely on SDKs, Uttam is the rare kind of engineer who thrives on complexity. Whether it's forking Aave just to understand lending protocols or creating a blockchain-verifiable AI summarization system, he’s constantly pushing the boundaries of what's possible. His toolbox spans from Flask, Next.js, MongoDB, Docker, and Prisma, to AI and ML using OpenAI APIs, LangChain. He’s not just a developer — he’s a visionary builder, the kind any serious team would want at their core. If I had a startup or a moonshot product to ship, Uttam would be one of my first calls.",
- "tagline": "Full-stack Web3 & ML Dev | Available to Work",
+  "tagline": "Full-stack Web3 & ML Dev | Available to Work",
   "education": "6th Semester Information Science Student at BMS College of Engineering",
   "projects": [
     {
@@ -100,7 +100,7 @@
         "ShadCN"
       ],
       "image": "https://res.cloudinary.com/duphxfug7/image/upload/v1746548392/Screenshot_2025-05-06_214917_zcswex.png",
-      "github": "https://github.com/uttamseervi",
+      "github": "https://github.com/uttamseervi/Mind-Dump",
       "link": "https://mind-dump-taupe.vercel.app/"
     },
     {

@@ -3,6 +3,7 @@ import { Slot } from "@radix-ui/react-slot"
 import { ChevronRight, MoreHorizontal } from "lucide-react"
 
 import { cn } from "@/lib/utils"
+import { AnimatedIcon } from "@/components/ui/animated-icon"
 
 const Breadcrumb = React.forwardRef<
   HTMLElement,
@@ -83,7 +84,11 @@ const BreadcrumbSeparator = ({
     className={cn("[&>svg]:w-3.5 [&>svg]:h-3.5", className)}
     {...props}
   >
-    {children ?? <ChevronRight />}
+    {children ?? (
+      <AnimatedIcon animation="pulse">
+        <ChevronRight />
+      </AnimatedIcon>
+    )}
   </li>
 )
 BreadcrumbSeparator.displayName = "BreadcrumbSeparator"
