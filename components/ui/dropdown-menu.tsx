@@ -35,9 +35,7 @@ const DropdownMenuSubTrigger = React.forwardRef<
     {...props}
   >
     {children}
-    <AnimatedIcon animation="spin">
-      <ChevronRight className="ml-auto" />
-    </AnimatedIcon>
+    <ChevronRight className="ml-auto" />
   </DropdownMenuPrimitive.SubTrigger>
 ))
 DropdownMenuSubTrigger.displayName =

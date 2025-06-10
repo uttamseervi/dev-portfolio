@@ -564,9 +564,9 @@ const SidebarMenuButton = React.forwardRef<
     >
       {React.Children.map(children, (child) => {
         if (React.isValidElement(child) && child.type === "svg") {
-          return <AnimatedIcon animation="bounce">{child}</AnimatedIcon>
+          return child;
         }
-        return child
+        return child;
       })}
     </Comp>
   )

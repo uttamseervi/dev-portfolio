@@ -47,27 +47,27 @@ export default function Hero({ name, status, availability }: HeroProps) {
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div>
               <div className="flex items-center gap-3">
-                <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-yellow-400 bg-clip-text text-transparent">
+                <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 dark:from-gray-100 dark:via-gray-200 dark:to-gray-300 bg-clip-text text-transparent">
                   {name}
                 </h1>
                 {availability && (
                   <div className="relative flex h-3 w-3">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-500"></span>
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gray-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-gray-500"></span>
                   </div>
                 )}
               </div>
               <div className="h-8 mt-2">
                 <p className="text-xl md:text-2xl text-muted-foreground">
-                  <span className="text-primary">{displayText}</span>
-                  <span className="text-primary animate-pulse">|</span>
+                  <span className="text-gray-900 dark:text-gray-100">{displayText}</span>
+                  <span className="text-gray-900 dark:text-gray-100 animate-pulse">|</span>
                 </p>
               </div>
               <p className="text-md mt-2 text-muted-foreground">
                 Crafting digital experiences with code and creativity
               </p>
             </div>
-            <Badge variant="outline" className="px-3 py-1 text-sm border-orange-500/50 bg-orange-500/10">
+            <Badge variant="outline" className="px-3 py-1 text-sm border-gray-500/50 bg-gray-500/10">
               {status}
             </Badge>
           </div>

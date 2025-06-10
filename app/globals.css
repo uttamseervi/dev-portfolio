@@ -60,213 +60,83 @@
   }
 }
 
-/* Add custom classes for rose glow effects */
 @layer components {
-  .rose-glow {
-    box-shadow: 0 0 15px 2px rgba(225, 29, 72, 0.3);
+  .glow {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   }
 
-  .rose-glow-sm {
-    box-shadow: 0 0 10px 1px rgba(225, 29, 72, 0.2);
+  .dark .glow {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
   }
 
-  .rose-glow-lg {
-    box-shadow: 0 0 25px 5px rgba(225, 29, 72, 0.4);
+  .glow-sm {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   }
 
-  /* Animation classes */
-  .animate-float {
-    animation: float 3s ease-in-out infinite;
+  .dark .glow-sm {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
   }
 
-  .animate-pulse-slow {
-    animation: pulse-slow 3s ease-in-out infinite;
+  .glow-lg {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
   }
 
-  .animate-shimmer {
-    animation: shimmer 2s linear infinite;
-    background: linear-gradient(90deg,
-        transparent 0%,
-        rgba(255, 255, 255, 0.2) 50%,
-        transparent 100%);
-    background-size: 200% 100%;
+  .dark .glow-lg {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
   }
 
-  .animate-glow {
-    animation: glow 2s ease-in-out infinite;
+  .hover-glow {
+    transition: box-shadow 0.3s ease;
   }
 
-  .animate-ripple {
-    animation: ripple 1s ease-out infinite;
+  .hover-glow:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
 
-  .animate-bounce {
-    animation: bounce 2s ease-in-out infinite;
+  .dark .hover-glow:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
   }
 
-  .animate-spin {
-    animation: spin 3s linear infinite;
+  .hover-glow-sm {
+    transition: box-shadow 0.3s ease;
   }
 
-  .animate-fade-in {
-    animation: fadeIn 0.5s ease-out forwards;
+  .hover-glow-sm:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   }
 
-  .animate-slide-in {
-    animation: slideIn 0.5s ease-out forwards;
+  .dark .hover-glow-sm:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
   }
 
-  .animate-scale-in {
-    animation: scaleIn 0.5s ease-out forwards;
+  .hover-glow-lg {
+    transition: box-shadow 0.3s ease;
   }
 
-  .animate-wave {
-    animation: wave 3s ease-in-out infinite;
+  .hover-glow-lg:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
   }
 
-  .animate-sparkle {
-    animation: sparkle 1.5s ease-in-out infinite;
+  .dark .hover-glow-lg:hover {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.35);
   }
 }
 
-@keyframes float {
-
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes pulse-slow {
-
-  0%,
-  100% {
-    opacity: 0.5;
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes shimmer {
+@keyframes gradient {
   0% {
-    background-position: -200% 0;
-  }
-
-  100% {
-    background-position: 200% 0;
-  }
-}
-
-@keyframes glow {
-
-  0%,
-  100% {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    background-position: 0% 50%;
   }
 
   50% {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-  }
-}
-
-@keyframes ripple {
-  0% {
-    transform: scale(0);
-    opacity: 0.5;
+    background-position: 100% 50%;
   }
 
   100% {
-    transform: scale(2);
-    opacity: 0;
+    background-position: 0% 50%;
   }
 }
 
-@keyframes bounce {
-
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-15px);
-  }
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes scaleIn {
-  from {
-    transform: scale(0.9);
-    opacity: 0;
-  }
-
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes wave {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  50% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes sparkle {
-
-  0%,
-  100% {
-    opacity: 0;
-    transform: scale(0);
-  }
-
-  50% {
-    opacity: 1;
-    transform: scale(1);
-  }
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 8s ease infinite;
 }

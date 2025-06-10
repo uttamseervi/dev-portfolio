@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/drawer"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { ExternalLink, Code, Zap, Trophy, Coffee, Gamepad2, BookOpen } from "lucide-react"
+import { ExternalLink, Code, Zap, Trophy, Coffee, Gamepad2, BookOpen, PenTool } from "lucide-react"
 
 interface AboutMeProps {
   about: string
@@ -32,21 +32,24 @@ export default function AboutMe({ about }: AboutMeProps) {
     { icon: Code, text: "Building side projects", color: "bg-blue-500" },
     { icon: BookOpen, text: "Reading tech blogs", color: "bg-green-500" },
     { icon: Gamepad2, text: "Gaming", color: "bg-purple-500" },
-    { icon: Coffee, text: "Coffee enthusiast", color: "bg-amber-600" }
+    { icon: Coffee, text: "Coffee enthusiast", color: "bg-amber-600" },
+    { icon: PenTool, text: "Writing tech blogs", color: "bg-rose-500" }
   ]
 
   const currentFocus = [
     "Exploring advanced Web3 development",
     "Learning system design patterns",
     "Exploring AI",
-    "Building scalable applications"
+    "Building scalable applications",
+    "Writing technical articles"
   ]
 
   const achievements = [
     "8.54 CGPA in Information Science",
     "Multiple full-stack projects deployed",
     "Experience with blockchain development",
-    "Proficient in modern tech stacks"
+    "Proficient in modern tech stacks",
+    "Technical writer at Mind Dump"
   ]
 
   return (
@@ -55,14 +58,10 @@ export default function AboutMe({ about }: AboutMeProps) {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Main About Card */}
-        <Card className="rose-glow-sm lg:col-span-2 hover:shadow-[0_0_30px_rgba(225,29,72,0.3)] transition-shadow duration-300 relative overflow-hidden">
-          <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-rose-500/50 to-transparent animate-pulse-slow" />
-            <div className="absolute bottom-0 right-0 w-1 h-full bg-gradient-to-b from-transparent via-rose-500/50 to-transparent animate-pulse-slow" />
-          </div>
+        <Card className="lg:col-span-2 hover-glow transition-shadow duration-300 relative overflow-hidden">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Code className="h-5 w-5 animate-float hover:scale-110 transition-transform duration-500" />
+              <Code className="h-5 w-5" />
               Who I Am
             </CardTitle>
             <CardDescription>A bit about my background and what drives me</CardDescription>
@@ -79,17 +78,30 @@ export default function AboutMe({ about }: AboutMeProps) {
               building systems that matter. I believe in learning by doing and love to experiment with new technologies
               that push the boundaries of what's possible on the web.
             </p>
+            <div className="mt-4">
+              <Button
+                variant="outline"
+                className="gap-2 hover-glow-sm"
+                asChild
+              >
+                <a
+                  href="https://mind-dump-taupe.vercel.app/author/cmbnmcr360000qdm00y9qe7q1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <PenTool className="h-4 w-4" />
+                  Read my tech blog
+                </a>
+              </Button>
+            </div>
           </CardContent>
         </Card>
 
         {/* Current Focus */}
-        <Card className="hover:shadow-[0_0_25px_rgba(225,29,72,0.25)] transition-shadow duration-300 relative overflow-hidden">
-          <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full bg-rose-500/5 animate-ripple" />
-          </div>
+        <Card className="hover-glow transition-shadow duration-300 relative overflow-hidden">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Zap className="h-5 w-5 text-rose-500 animate-pulse-slow hover:rotate-12 transition-transform duration-500" />
+              <Zap className="h-5 w-5" />
               Currently Exploring
             </CardTitle>
             <CardDescription>What I'm learning and working on right now</CardDescription>
@@ -98,7 +110,7 @@ export default function AboutMe({ about }: AboutMeProps) {
             <ul className="space-y-2">
               {currentFocus.map((item, index) => (
                 <li key={index} className="flex items-start gap-2 text-sm">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0 animate-pulse-slow" style={{ animationDelay: `${index * 0.2}s` }} />
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -107,14 +119,10 @@ export default function AboutMe({ about }: AboutMeProps) {
         </Card>
 
         {/* Achievements */}
-        <Card className="hover:shadow-[0_0_25px_rgba(225,29,72,0.25)] transition-shadow duration-300 relative overflow-hidden">
-          <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute top-0 right-0 w-16 h-16 bg-rose-500/5 rounded-full animate-water-drop" />
-            <div className="absolute bottom-0 left-0 w-12 h-12 bg-rose-500/5 rounded-full animate-water-drop" style={{ animationDelay: '0.5s' }} />
-          </div>
+        <Card className="hover-glow transition-shadow duration-300 relative overflow-hidden">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Trophy className="h-5 w-5 text-rose-500 animate-float hover:scale-110 transition-transform duration-500" />
+              <Trophy className="h-5 w-5" />
               Key Highlights
             </CardTitle>
             <CardDescription>Some of my notable achievements</CardDescription>
@@ -123,7 +131,7 @@ export default function AboutMe({ about }: AboutMeProps) {
             <ul className="space-y-2">
               {achievements.map((achievement, index) => (
                 <li key={index} className="flex items-start gap-2 text-sm">
-                  <div className="w-1.5 h-1.5 rounded-full bg-rose-500 mt-2 flex-shrink-0 animate-pulse-slow" style={{ animationDelay: `${index * 0.2}s` }} />
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                   <span>{achievement}</span>
                 </li>
               ))}
@@ -132,7 +140,7 @@ export default function AboutMe({ about }: AboutMeProps) {
         </Card>
 
         {/* Personal Interests */}
-        <Card className="hover:shadow-[0_0_25px_rgba(249,115,22,0.25)] transition-shadow duration-300 lg:col-span-2">
+        <Card className="hover-glow transition-shadow duration-300 lg:col-span-2">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Coffee className="h-5 w-5 text-amber-600 animate-float hover:scale-110 transition-transform duration-500" />
